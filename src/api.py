@@ -31,9 +31,9 @@ def get_data():
 def index():
 
     aggregate = {}
-    request_obj = request.json['distance']
-    request_obj2 = request.json['time']
-    request_obj3 = request.json['Sno']
+    request_obj = request.args['distance']
+    request_obj2 = request.args['time']
+    request_obj3 = request.args['Sno']
 
     aggregate['distance'] = request_obj
     aggregate['time'] = request_obj2

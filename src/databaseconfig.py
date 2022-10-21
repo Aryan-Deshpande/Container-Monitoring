@@ -12,5 +12,6 @@ def connect():
         print(e)
         return e
 
+
 db = connect()
 data = db.data
